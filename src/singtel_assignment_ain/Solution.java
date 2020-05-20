@@ -20,7 +20,14 @@ public class Solution {
 		Chicken chicken = new Chicken();
 		chicken.sing();
 		chicken.fly();
-
+		
+		//rooster
+		Rooster rooster = new Rooster();
+		rooster.sing();
+		
+		//rooster without inheritance, it uses anonymous inner classes instead
+		RoosterWOInheritance roosterWOInheritance = new RoosterWOInheritance();
+		roosterWOInheritance.chicken.sing();
 	}
 
 }

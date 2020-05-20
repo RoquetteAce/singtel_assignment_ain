@@ -5,6 +5,7 @@ import org.junit.Test;
 import singtel_assignment_ain.Bird;
 import singtel_assignment_ain.Chicken;
 import singtel_assignment_ain.Duck;
+import singtel_assignment_ain.Rooster;
 
 public class BirdTest {
 	
@@ -40,6 +41,18 @@ public class BirdTest {
 		chicken.swim();
 		chicken.walk();
 		chicken.fly();
+		System.out.println("===");
+
+	}
+	
+	@Test
+	public void roosterTest() {
+		Rooster rooster = new Rooster();
+		System.out.println("I am a rooster, I should be able to walk, sing, I am not very strong at flying and swimming");
+		rooster.sing();
+		rooster.swim();
+		rooster.walk();
+		rooster.fly();
 		System.out.println("===");
 
 	}
