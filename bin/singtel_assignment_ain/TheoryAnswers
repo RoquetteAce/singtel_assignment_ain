@@ -1,0 +1,7 @@
+Part A
+1)
+a)
+b)  I changed the Animal class to an interface for easy maintenance since Birds are not the only Animal
+	It would be easier to implement the different methods to other Animals later on. 
+
+==========
