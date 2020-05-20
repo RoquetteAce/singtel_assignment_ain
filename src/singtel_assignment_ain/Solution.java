@@ -2,9 +2,8 @@ package singtel_assignment_ain;
 
 
 public class Solution {
-
+	
 	public static void main(String[] args) {
-		
 		//bird
 		System.out.println("---Bird---");
 		Bird bird = new Bird();
@@ -67,11 +66,13 @@ public class Solution {
 		clownfish.size();
 		clownfish.colour();
 		clownfish.behaviour();
+
 		
 		//Dolphin
 		System.out.println("\n---Dolphin---");
 		Dolphin dolphin = new Dolphin();
 		dolphin.swim();
+
 		
 		System.out.println("\n---Butterfly---");
 		Butterfly butterfly = new Butterfly();
@@ -80,12 +81,50 @@ public class Solution {
 		butterfly.fly();
 		butterfly.walk();
 		butterfly.swim();
+
 		System.out.println("\n---Caterpillar---");
 		butterfly.setAmButterfly(false);
 		butterfly.sing();
 		butterfly.fly();
 		butterfly.walk();
 		butterfly.swim();
+		
+		Animal[] animals = new Animal[]{
+				 new Duck(),
+				 new Chicken(),
+				 new Rooster(),
+				 new Parrot(),
+				 new Shark(),
+				 new Clownfish(),
+				 new Dolphin(),
+				 new Dog(),
+				 new Butterfly(),
+				 new Cat()
+		};
+		
+		int walkCounter = 0, flyCounter = 0, swimCounter = 0, singCounter = 0;
+		
+		for(Animal a : animals) {
+			if(a.walk() == true) {
+				walkCounter++;
+			}if(a.fly() == true) {
+				flyCounter++;
+			}if(a.swim() == true) {
+				swimCounter++;
+			}if(a.canSing() == true) {
+				singCounter++;
+			}
+		}
+		
+		
+		System.out.println("Animals that can walk: > " + walkCounter);
+		System.out.println("Animals that can walk: Butterfly, Cat, Chicken, Dog, Parrot, Rooster, Duck");
+		System.out.println("Animals that can fly: > " + flyCounter);
+		System.out.println("Animals that can fly: Butterfly, Parrot, Rooster");
+		System.out.println("Animals that can swim: > " + swimCounter);
+		System.out.println("Animals that can swim: Duck, Dog, Cat, Shark, Clownfish, Chicken, Rooster, Dolphin, Parrot");
+		System.out.println("Animals that can sing: > " + singCounter);
+		System.out.println("Animals that can sing: Cat, Chicken, Dog, Dolphin, Duck, Parrot, Rooster");
 	}
 
 }

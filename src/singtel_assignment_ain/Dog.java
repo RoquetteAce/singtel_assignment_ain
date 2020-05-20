@@ -1,11 +1,10 @@
 package singtel_assignment_ain;
 
 public class Dog implements Animal{
-
 	@Override
-	public void walk() {
+	public boolean walk() {
 		System.out.println("I am walking");
-		
+		return true;
 	}
 
 	@Override
@@ -16,15 +15,20 @@ public class Dog implements Animal{
 	}
 
 	@Override
-	public void fly() {
+	public boolean fly() {
 		System.out.println("I cannot fly");
-		
+		return false;
 	}
 
 	@Override
-	public void swim() {
+	public boolean swim() {
 		System.out.println("I am swimming");
-		
+		return true;
+	}
+
+	@Override
+	public boolean canSing() {
+		return true;
 	}
 
 }

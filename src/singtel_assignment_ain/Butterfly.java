@@ -1,18 +1,18 @@
 package singtel_assignment_ain;
 
 public class Butterfly implements Animal{
-	
+	AnimalCounter AC = new AnimalCounter();
 	private boolean amButterfly;
 	String walk;
 	String fly;
-	
+
 	public void setAmButterfly(boolean amButterfly) {
 		this.amButterfly = amButterfly;
 	}
 	
 
 	@Override
-	public void walk() {
+	public boolean walk() {
 		if(amButterfly== true) {
 			walk = "I can walk";
 			System.out.println(walk);
@@ -20,7 +20,7 @@ public class Butterfly implements Animal{
 			walk="I can crawl";
 			System.out.println(walk);
 		}
-		
+		return true;
 	}
 
 	@Override
@@ -31,22 +31,32 @@ public class Butterfly implements Animal{
 	}
 
 	@Override
-	public void fly() {
+	public boolean fly() {
 		if(amButterfly== true) {
 			fly = "I am flying";
 			System.out.println(fly);
+			return true;
 		} else {
 			fly="I cannot fly";
 			System.out.println(fly);
+			return false;
 		}
 		
 	}
 
 	@Override
-	public void swim() {
+	public boolean swim() {
 		System.out.println("I cannot swim");
+		return false;
+	}
+	
+
+
+	@Override
+	public boolean canSing() {
+		return false;
 	}
 
-
+	
 
 }

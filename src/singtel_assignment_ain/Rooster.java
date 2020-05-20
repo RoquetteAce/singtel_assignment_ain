@@ -2,9 +2,9 @@ package singtel_assignment_ain;
 
 public class Rooster extends Bird{
 	@Override
-	public void walk() {
+	public boolean walk() {
 		System.out.println("I am walking");
-
+		return true;
 	}
 
 	@Override
@@ -16,15 +16,21 @@ public class Rooster extends Bird{
 	}
 
 	@Override
-	public void fly() {
+	public boolean fly() {
 		System.out.println("I am not strong at flying");
-
+		return true;
 	}
 
 	@Override
-	public void swim() {
+	public boolean swim() {
 		System.out.println("I am not a strong swimmer");
-		
+		return true;
+	}
+	
+	@Override
+	public boolean canSing() {
+		// TODO Auto-generated method stub
+		return true;
 	}
 	
 }

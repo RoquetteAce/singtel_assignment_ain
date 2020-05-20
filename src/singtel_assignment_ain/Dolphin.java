@@ -3,15 +3,15 @@ package singtel_assignment_ain;
 public class Dolphin implements Animal{
 
 	@Override
-	public void swim() {
+	public boolean swim() {
 		System.out.println("I am a mammal but I can swim really well");
-		
+		return true;
 	}
 
 	@Override
-	public void walk() {
+	public boolean walk() {
 		System.out.println("I cannot walk");
-		
+		return false;
 	}
 
 	@Override
@@ -22,9 +22,15 @@ public class Dolphin implements Animal{
 	}
 
 	@Override
-	public void fly() {
+	public boolean fly() {
 		System.out.println("I cannot fly");
-		
+		return false;
+	}
+
+	@Override
+	public boolean canSing() {
+		// TODO Auto-generated method stub
+		return true;
 	}
 
 	
