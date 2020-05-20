@@ -1,7 +1,7 @@
 package singtel_assignment_ain;
 
-public class Bird implements Animal {
-
+public class Chicken extends Bird{
+	
 	@Override
 	public void walk() {
 		System.out.println("I am walking");
@@ -10,20 +10,19 @@ public class Bird implements Animal {
 
 	@Override
 	public void sing() {
-		System.out.println("I am singing");
+		System.out.println("Cluck, cluck");
 
 	}
 
 	@Override
 	public void fly() {
-		System.out.println("I am flying");
+		System.out.println("I cannot fly...");
 
 	}
 
 	@Override
 	public void swim() {
-		System.out.println("I am swimming");
+		System.out.println("I am not a strong swimmer");
 		
 	}
-
 }

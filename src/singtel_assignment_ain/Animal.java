@@ -1,7 +1,8 @@
 package singtel_assignment_ain;
 
 public interface Animal {
-	void walk();
-	void sing();
-	void fly();
+	public void walk();
+	public void sing();
+	public void fly();
+	public void swim();
 }
