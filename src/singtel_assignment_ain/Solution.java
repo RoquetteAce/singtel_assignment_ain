@@ -72,6 +72,20 @@ public class Solution {
 		System.out.println("\n---Dolphin---");
 		Dolphin dolphin = new Dolphin();
 		dolphin.swim();
+		
+		System.out.println("\n---Butterfly---");
+		Butterfly butterfly = new Butterfly();
+		butterfly.setAmButterfly(true);
+		butterfly.sing();
+		butterfly.fly();
+		butterfly.walk();
+		butterfly.swim();
+		System.out.println("\n---Caterpillar---");
+		butterfly.setAmButterfly(false);
+		butterfly.sing();
+		butterfly.fly();
+		butterfly.walk();
+		butterfly.swim();
 	}
 
 }
