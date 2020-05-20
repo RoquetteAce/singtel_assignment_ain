@@ -10,4 +10,7 @@ c) I tried using anonymous inner classes, but I believe you can also try it with
 4)
 d) 	In this case you would just have to create a class for the animal sound that you want the parrot to sing
 	then you just create an instance of that animal in parrot and then call the sing method.
+	
+Part B
+
 ==========

@@ -46,6 +46,12 @@ public class Solution {
 		//Parrot living with a Rooster
 		parrot.parrotSings("Rooster");
 		parrot.sing();
+		
+		System.out.println("\n---Fish---");
+		Fish fish = new Fish();
+		fish.sing();
+		fish.walk();
+		fish.swim();
 	}
 
 }
