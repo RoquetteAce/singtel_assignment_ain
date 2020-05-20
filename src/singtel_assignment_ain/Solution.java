@@ -47,23 +47,31 @@ public class Solution {
 		parrot.parrotSings("Rooster");
 		parrot.sing();
 		
+		//Fish
 		System.out.println("\n---Fish---");
 		Fish fish = new Fish();
 		fish.sing();
 		fish.walk();
 		fish.swim();
 		
+		//Shark
 		System.out.println("\n---Shark---");
 		Shark shark = new Shark();
 		shark.size();
 		shark.colour();
 		shark.behaviour();
 		
+		//Clownfish
 		System.out.println("\n---Clownfish---");
 		Clownfish clownfish = new Clownfish();
 		clownfish.size();
 		clownfish.colour();
 		clownfish.behaviour();
+		
+		//Dolphin
+		System.out.println("\n---Dolphin---");
+		Dolphin dolphin = new Dolphin();
+		dolphin.swim();
 	}
 
 }

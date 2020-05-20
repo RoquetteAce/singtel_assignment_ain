@@ -12,5 +12,5 @@ d) 	In this case you would just have to create a class for the animal sound that
 	then you just create an instance of that animal in parrot and then call the sing method.
 	
 Part B
-
+3) Abstract can implement interface without having to implement all the codes, just particular ones
 ==========
