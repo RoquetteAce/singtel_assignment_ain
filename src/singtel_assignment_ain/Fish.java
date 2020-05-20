@@ -26,5 +26,17 @@ public class Fish implements Animal {
 		System.out.println("I am swimming");
 
 	}
+	
+	public void size() {
+		System.out.println("Am I big or small?");
+	}
+	
+	public void colour() {
+		System.out.println("What colour am I?");
+	}
+	
+	public void behaviour() {
+		System.out.println("What do I usually do?");
+	}
 
 }

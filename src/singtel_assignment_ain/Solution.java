@@ -52,6 +52,18 @@ public class Solution {
 		fish.sing();
 		fish.walk();
 		fish.swim();
+		
+		System.out.println("\n---Shark---");
+		Shark shark = new Shark();
+		shark.size();
+		shark.colour();
+		shark.behaviour();
+		
+		System.out.println("\n---Clownfish---");
+		Clownfish clownfish = new Clownfish();
+		clownfish.size();
+		clownfish.colour();
+		clownfish.behaviour();
 	}
 
 }
