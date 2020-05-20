@@ -81,7 +81,6 @@ public class Solution {
 		butterfly.fly();
 		butterfly.walk();
 		butterfly.swim();
-
 		System.out.println("\n---Caterpillar---");
 		butterfly.setAmButterfly(false);
 		butterfly.sing();
