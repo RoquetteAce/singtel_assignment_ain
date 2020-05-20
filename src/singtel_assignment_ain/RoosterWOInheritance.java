@@ -9,8 +9,10 @@ public class RoosterWOInheritance {
 		}
 
 		@Override
-		public void sing() {
-			System.out.println("Coock-a-doodle-doo");
+		public String sing() {
+			String sing = "Coock-a-doodle-doo";
+			System.out.println(sing);
+			return sing;
 
 		}
 

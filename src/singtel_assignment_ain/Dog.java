@@ -1,31 +1,30 @@
 package singtel_assignment_ain;
 
-public class Rooster extends Bird{
+public class Dog implements Animal{
+
 	@Override
 	public void walk() {
 		System.out.println("I am walking");
-
+		
 	}
 
 	@Override
 	public String sing() {
-		String sing = "Cock-a-doodle-doo";
+		String sing = "Woof, woof";
 		System.out.println(sing);
 		return sing;
-
 	}
 
 	@Override
 	public void fly() {
-		System.out.println("I am not strong at flying");
-
+		System.out.println("I cannot fly");
+		
 	}
 
 	@Override
 	public void swim() {
-		System.out.println("I am not a strong swimmer");
+		System.out.println("I am swimming");
 		
 	}
-	
-}
 
+}

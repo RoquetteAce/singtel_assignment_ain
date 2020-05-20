@@ -9,9 +9,10 @@ public class Chicken extends Bird{
 	}
 
 	@Override
-	public void sing() {
-		System.out.println("Cluck, cluck");
-
+	public String sing() {
+		String sing = "Cluck, cluck";
+		System.out.println(sing);
+		return sing;
 	}
 
 	@Override

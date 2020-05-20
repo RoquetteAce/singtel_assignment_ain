@@ -9,8 +9,10 @@ public class Bird implements Animal {
 	}
 
 	@Override
-	public void sing() {
-		System.out.println("I am singing");
+	public String sing() {
+		String sing = "I am singing";
+		System.out.println(sing);
+		return sing;
 
 	}
 

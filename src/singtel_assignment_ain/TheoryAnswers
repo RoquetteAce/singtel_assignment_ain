@@ -7,4 +7,7 @@ b)  I changed the Animal class to an interface for easy maintenance since Birds 
 b) Rooster is a chicken
 c) I tried using anonymous inner classes, but I believe you can also try it with maybe composition and several other ways
 
+4)
+d) 	In this case you would just have to create a class for the animal sound that you want the parrot to sing
+	then you just create an instance of that animal in parrot and then call the sing method.
 ==========
